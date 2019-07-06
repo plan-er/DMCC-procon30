@@ -1,3 +1,5 @@
+#送受信データの変換部分
+
 import json
 
 def r_transform(path_receive):
