@@ -18,8 +18,8 @@ if __name__ == "__main__":
     sampleToken = {
         "Authorization": "procon30_example_token"
     }
-    url = "http://localhost:8081/ping"
-    print(getField(url, sampleToken))
+    url = "http://localhost:8081"
+    print(getField(url+"/ping", sampleToken))
     
     sampleAction = {
         "actions": [
@@ -37,4 +37,4 @@ if __name__ == "__main__":
                 }
             ]
     }
-    print(sendAction(url, sampleToken, sampleAction))
+    print(sendAction(url+"/matches/1/action", sampleToken, sampleAction))
